@@ -56,28 +56,33 @@ li {
 }
 /* body */
 .body {
-    height: 100%;
-    width: 100%;
+
     flex-grow: 1;
+    flex-wrap: wrap;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
 
 }
 .content{
-
-   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 form {
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+
+    
 }
 .input {
     margin: 20px;
     width: 100%;
-    min-width: 200px;
+    flex-wrap: wrap;
     height: 30px;
     border-radius: 20px;
     display: flex;
@@ -88,6 +93,7 @@ form {
 .logo {
     max-width: 600px;
     min-width: 300px;
+    white-space: nowrap;
 }
 .options {
     flex-direction: row;
@@ -97,7 +103,7 @@ form {
 .search, .lucky {
     padding: 5px;
     text-decoration: none;
-    border: 0.5px solid  rgb(248,244,244);
+    border: 0.5px solid  rgba(248,249,250,255);
     
 }
 .option1 {
@@ -106,7 +112,16 @@ form {
 .option2 {
     display: inline-block;
 }
+/* image search html*/
+.subtitle {
+    color: #4285f4;
+    font: 16px / 16px Arial, sans-serif;
+    top: 430px;
+    right: 500px;
+    
+    white-space: nowrap;
 
+}
 /* footer */
 .footer {
     flex-shrink: 0;
@@ -136,10 +151,4 @@ form {
     justify-content: flex-end;
 }
 
-/* image_search.html */
-.title {
-    display: inline-block;
-}
-.subtitle {
-    flex-wrap: wrap;
-}
+
