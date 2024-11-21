@@ -8,7 +8,6 @@ body {
     margin: 0;
     font-family: Arial,sans-serif;
     font-size: 14px;
-    /* justify-content: space-between; */
 
 
 }
@@ -58,6 +57,7 @@ li {
 /* body */
 .body {
     height: 100%;
+    width: 100%;
     flex-grow: 1;
     align-items: center;
     display: flex;
@@ -66,17 +66,18 @@ li {
 
 }
 .content{
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
+
    
 }
 form {
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 .input {
     margin: 20px;
     width: 100%;
+    min-width: 200px;
     height: 30px;
     border-radius: 20px;
     display: flex;
@@ -86,10 +87,10 @@ form {
 }
 .logo {
     max-width: 600px;
+    min-width: 300px;
 }
 .options {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
@@ -120,16 +121,25 @@ form {
 .bottom {
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .option1, .option2 {
-    display: inline-block;
 }
 .option1 {
-   
-};
+    display: flex;
+    padding-left: 0;
+    justify-content: flex-start;
+}
 
 .option2 {
-    
-};
+    justify-content: flex-end;
+}
 
+/* image_search.html */
+.title {
+    display: inline-block;
+}
+.subtitle {
+    flex-wrap: wrap;
+}
