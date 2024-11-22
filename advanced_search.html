@@ -6,28 +6,46 @@
     <title>Advanced Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="advanced">
     <div class="header">
+        <div class="title">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo">
+        </div>
         <div class="links">
             <ul>
-                <li><a href="image_search.html">Image Search</a></li>
-                <li><a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Advanced Search</a></li>
+                <li><a href="index.html">Google Search</a></li>
             </ul>
     
         </div>
     </div>
-    <div class="body">
-        <div class="title">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo">
-        </div>
+    <div class="main">
+        <span>Advanced Search</span>
         <div class="content">
             <form action="https://www.google.com/search">
-                <input type="text" name="q" class="input">
-                <div class="options">
-                    <input type="submit" value="Google Search" class="search">
-                    <input type="submit" value="I'm Feeling Lucky" jsaction="trigger.kWlxhc0ahUKEwj2kKvP7-iJAxXc2DQHHT-BNjoQ19QECB4" class="lucky">
+                <span>Find pages with...</span>
+                <div class="prompt">
+                    <span>all these words:</span>
+                    <input type="text" name="as_q" class="input">
                 </div>
+                <div class="prompt">
+                    <span>this exact word or phrase:</span>
+                    <input type="text" name="as_epq" class="input">
+                </div>
+                <div class="prompt">
+                    <span>any of these words:</span>
+                    <input type="text" name="as_oq" class="input">
+                </div>
+                <div class="prompt">
+                    <span>none of these words:</span>
+                    <input type="text" name="as_eq" class="input">
+                </div>
+                <div class="options">
+                    <input type="submit" value="Advanced Search" class="search">
+                </div>
+               
+                
             </form>
+
         </div>
     </div>
     <div class="footer">
