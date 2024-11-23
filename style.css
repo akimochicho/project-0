@@ -45,7 +45,6 @@ li {
     list-style: none;
     text-decoration: none;
     display: inline-block
-  
 }
 /* advanced search html */
 .advanced .image .logo {
@@ -56,7 +55,6 @@ li {
 }
 /* body */
 .main {
-
     flex-grow: 1;
     flex-wrap: wrap;
     align-items: center;
@@ -64,7 +62,6 @@ li {
     justify-content: center;
     flex-direction: column;
     margin: 0;
-
 }
 .content{
     width: 100%;
@@ -88,9 +85,7 @@ form {
     display: flex;
     justify-self: center;
     border: 0.5px solid  rgb(223, 222, 222);
-    
 }
-
 .options {
     flex-direction: row;
     justify-content: center;
@@ -104,7 +99,6 @@ form {
     padding: 5px;
     text-decoration: none;
     border: 0.5px solid  rgba(248,249,250,255);
-    
 }
 /* image search html*/
 .subtitle, .filler-logo {
@@ -159,7 +153,6 @@ form span {
 .advanced .content label, .filler-left {
     width: 170px;
     flex: none;
-
 }
 .advanced .options {
     display: flex;
@@ -184,7 +177,6 @@ form span {
     border: 0px;
     justify-content: flex-end;
     flex-wrap: nowrap; 
-
 }
 .advanced .search {
     display: flex;
@@ -212,14 +204,12 @@ form span {
 }
 .option1, .option2 {
     padding: 5px;
-    
 }
 .option1 {
     text-align: center;
     display: flex;
     justify-content: flex-start;
 }
-
 .option2 {
     text-align: center;
     display: flex;
