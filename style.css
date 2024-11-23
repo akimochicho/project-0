@@ -11,7 +11,7 @@ body {
 
 
 }
-.header, .body, .footer{
+.header, .main .footer{
     padding: 10px;
 }
 .img{
@@ -24,6 +24,7 @@ button {
 }
 /*header*/
 .header {
+    flex-shrink: 0;
     background-color: white;
     color: blanchedalmond;
     display: flex;
@@ -34,14 +35,13 @@ button {
 }
 .title{
     display: flex;
-    /* height: 100%; */
+
 }
 a {
     text-decoration: none;
     color:#2e2a26;
 }
 .links {
-    /* align-items: flex-end; */
     color: #E5E7EB;
     display: flex;
     justify-content:flex-end;
@@ -61,12 +61,6 @@ li {
   
 }
 /* advanced search html */
-/* .advanced .title {
-    white-space: nowrap;
-}
-.title .logo {
-    height: auto;
-} */
 .advanced .title {
     max-height: max-content;
 }
@@ -114,11 +108,7 @@ form {
     border: 0.5px solid  rgb(223, 222, 222);
     
 }
-/* .logo {
-    max-width: 600px;
-    min-width: 300px;
-    white-space: nowrap;
-} */
+
 .options {
     flex-direction: row;
     justify-content: center;
@@ -141,21 +131,12 @@ form {
 .subtitle {
     color: #4285f4;
     font: 16px / 16px Arial, sans-serif;
-    top: 430px;
-    right: 500px;
-
+    /* top: 430px;
+    right: 500px; */
     white-space: nowrap;
-
+    text-anchor: start;
 }
 /* advanced search html */
-.advanced {
-    /* flex-grow: 1;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    margin: 0; */
-}
 .advanced .main {
     padding: 10px;
     display: flex;
@@ -242,6 +223,8 @@ form span {
     flex-shrink: 0;
     background-color:rgb(248,244,244);
     margin: 0;
+    flex-wrap: wrap;
+    padding-bottom: 2px;
 
 }
 
@@ -254,16 +237,23 @@ form span {
     justify-content: space-evenly;
     flex-wrap: wrap;
     border-top: 0.5px solid rgb(223, 222, 222);
+    align-items: end;
+    
+
 }
 .option1, .option2 {
+    padding: 5px;
+    
 }
 .option1 {
+    text-align: center;
     display: flex;
-    padding-left: 0;
     justify-content: flex-start;
 }
 
 .option2 {
+    text-align: center;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -280,3 +270,4 @@ form span {
     display: flex;
     justify-content: flex-start;
 }
+
