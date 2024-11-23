@@ -1,6 +1,5 @@
 /*general*/
 body {
-    /* default body format */
     color: #2e2a26;
     flex-direction: column;
     display: flex;
@@ -8,19 +7,9 @@ body {
     margin: 0;
     font-family: Arial,sans-serif;
     font-size: 14px;
-
-
 }
 .header, .main .footer{
     padding: 10px;
-}
-.img{
-    max-width: 23px;
-}
-button {
-    
-   
-
 }
 /*header*/
 .header {
@@ -31,11 +20,10 @@ button {
     height: auto;
     flex-direction: row;
     justify-content: space-between;
-    /* flex-direction: row; */
 }
 .title{
     display: flex;
-
+    justify-content: center;
 }
 a {
     text-decoration: none;
@@ -51,7 +39,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 li {
     padding: 0;
     padding-left: 13px;
@@ -61,9 +48,6 @@ li {
   
 }
 /* advanced search html */
-.advanced .title {
-    max-height: max-content;
-}
 .advanced .image .logo {
     display: inline-block;
     white-space: nowrap;
@@ -78,12 +62,10 @@ li {
     align-items: center;
     display: flex;
     justify-content: center;
-    /* justify-content: left; */
     flex-direction: column;
     margin: 0;
 
 }
-
 .content{
     width: 100%;
     display: flex;
@@ -91,14 +73,14 @@ li {
     flex-wrap: wrap;
 }
 form {
+    width: 40%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-    
 }
 .input, .filler {
-    margin: 20px;
+    min-width: 400px;
+    margin: 10px;
     width: 100%;
     flex-wrap: wrap;
     height: 30px;
@@ -113,28 +95,29 @@ form {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    display: flex;
+    gap: 20px;
 }
 .search, .lucky {
+    display: inline-block;
+    flex-direction: row;
     padding: 5px;
     text-decoration: none;
     border: 0.5px solid  rgba(248,249,250,255);
     
 }
-.option1 {
-    display: inline-block;
-}
-.option2 {
-    display: inline-block;
-}
-
 /* image search html*/
-.subtitle {
+.subtitle, .filler-logo {
     color: #4285f4;
     font: 16px / 16px Arial, sans-serif;
-    top: 74px;
-    right: 56px;
+    top: -15px;
+    right: -106px;
     display: flex;
     position: relative;
+    white-space: nowrap;
+}
+.filler-logo {
+    height: 16px;
 }
 /* advanced search html */
 .advanced .main {
@@ -155,8 +138,6 @@ form {
     font-size: 20px;
     align-self: flex-start;
     margin: 20px;
-    
-    
 }
 .advanced form {
     flex-wrap: wrap;
@@ -165,20 +146,16 @@ form {
     justify-content:left;
     flex-direction: column;
     padding: 20px;
-    
-   
 }
 form span {
     font-size: 17px;
 }
-
 .advanced .prompt, .filler-main {
     align-items: center;
     flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
 }
-
 .advanced .content label, .filler-left {
     width: 170px;
     flex: none;
@@ -190,6 +167,7 @@ form span {
     flex-direction: row;
 }
 .advanced .input, .filler {
+    margin: 20px;
     min-width: 190px;
     max-width: 500px;
     border-radius: 0px;
@@ -201,7 +179,6 @@ form span {
     border: 0.5px solid  rgba(248,249,250,255);
     flex-wrap: wrap;
 }
-
 .filler {
     display:flex;
     border: 0px;
@@ -209,25 +186,18 @@ form span {
     flex-wrap: nowrap; 
 
 }
-
 .advanced .search {
     display: flex;
     background-color: #4285f4;
     color:white;
     border:#4285f4;
 }
-
-
 /* footer */
 .footer {
-    flex-shrink: 0;
     background-color:rgb(248,244,244);
-    margin: 0;
     flex-wrap: wrap;
-    padding-bottom: 2px;
-
+    padding: 5px;
 }
-
 .country, .bottom {
     padding: 10px;
 }
@@ -235,11 +205,10 @@ form span {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
     flex-wrap: wrap;
     border-top: 0.5px solid rgb(223, 222, 222);
     align-items: end;
-    
-
 }
 .option1, .option2 {
     padding: 5px;
@@ -256,18 +225,12 @@ form span {
     display: flex;
     justify-content: flex-end;
 }
-
 /* advanced search html */
 .advanced .footer {
     display: flex;
     flex-direction: column;
 }
-.advanced .country {
-    display: flex;
-    justify-content: flex-start;
-}
 .advanced .bottom {
-    display: flex;
     justify-content: flex-start;
 }
 
