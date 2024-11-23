@@ -131,10 +131,10 @@ form {
 .subtitle {
     color: #4285f4;
     font: 16px / 16px Arial, sans-serif;
-    /* top: 430px;
-    right: 500px; */
-    white-space: nowrap;
-    text-anchor: start;
+    top: 74px;
+    right: 56px;
+    display: flex;
+    position: relative;
 }
 /* advanced search html */
 .advanced .main {
